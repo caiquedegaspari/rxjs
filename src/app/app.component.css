@@ -1,0 +1,29 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.div1 {
+    margin-left: 15px;
+    min-width: 20%;
+    align-content: space-around center;
+}
+
+mat-radio-group { 
+    align-items:flex-start;
+    
+}
+
+mat-radio-button { 
+    display: block;
+    margin: 15px;
+}
+
+.div2 { 
+    flex-direction: column;
+    min-width: 70%;
+}

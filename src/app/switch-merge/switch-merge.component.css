@@ -1,0 +1,11 @@
+.div1{ 
+    display: flex;
+
+    align-items: start stretch;
+    flex-direction: column;
+}
+
+mat-form-field{
+    position: absolute;
+    display: block;
+}

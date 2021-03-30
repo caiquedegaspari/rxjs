@@ -1,0 +1,24 @@
+<div>
+    <button mat-stroked-button color="primary" (click)="mapClick()">Map</button> 
+    <button mat-stroked-button color="primary" (click)="filterClick()">Filter</button> 
+    <button mat-stroked-button color="primary" (click)="tapClick()">Tap</button> 
+    <button mat-stroked-button color="primary" (click)="takeClick()">Take</button> 
+    <button mat-stroked-button color="primary" (click)="debounceTimeClick()">Debounce time</button> 
+    <button mat-stroked-button color="primary" (click)="debounceTimeSearch()">Debounce Search</button> 
+    <button mat-stroked-button color="primary" (click)="takeWhileClick()">takeWhile</button> 
+    <button mat-stroked-button color="primary" (click)="takeUntilSearch()">take Until</button> 
+    <button mat-stroked-button color="primary" (click)="testFromEvent()">TESTE FROM EVENT</button>
+</div>
+
+<div class="debounce-area" matRipple matRippleCentered="true" matRippleColor="orange" matRippleRadius="40"> 
+
+</div>
+
+<mat-divider></mat-divider>
+
+<mat-form-field style="margin :20px">
+    <mat-label>Search by:</mat-label>
+    <input matInput autocomplete="off" placeholder="type something"
+    (keyup)="searchBy_UsingDebounce($event)"
+    [(ngModel)]="searchInput">
+</mat-form-field>

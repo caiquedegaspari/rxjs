@@ -1,0 +1,11 @@
+.div1{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center start;
+}
+
+.div2{ 
+    display: flex;
+    flex-direction: row;
+    align-items: space-around start;
+}

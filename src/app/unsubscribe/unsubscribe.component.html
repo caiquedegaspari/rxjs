@@ -1,0 +1,13 @@
+<div class="div1">
+    <div class="div2">
+        <button mat-stroked-button color="warn" (click)="subscribe()">subscribe all</button>
+        <mat-spinner *ngIf="subscriptionsAreActive" diameter="20" color="warn"></mat-spinner>
+    </div> 
+    <div class="div2">
+        <button mat-stroked-button
+         color="primary"
+         [disabled]="!subscriptionsAreActive"
+          (click)="unsubscribe()"
+          >unsubscribe all</button>
+    </div>
+</div>
